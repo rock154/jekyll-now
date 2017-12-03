@@ -27,11 +27,11 @@ Honestly I still don't quite understand the meaning of this explanation, but I'l
 
 *Rule of thumb* definition, a general or approximate principle, procedure, or rule based on experience or practice, as opposed to a specific, scientific calculation or estimate. 
 
-3). RBO VS CBO
+##### 3). RBO VS CBO
 
 > "Basically, the RBO used a set of rules to determine how to execute a query. The biggest problem with the RBO was that it did not take the data distribution into account. So the [Cost-Based Optimizer (CBO)](http://searchoracle.techtarget.com/tip/Managing-the-cost-based-optimizer-in-E-Business-Suite) was born. The CBO uses statistics about the table, its indexes and the data distribution to make better informed decisions."
 
-4). Code demo
+##### 4). Code demo
 
 ```sql
 SELECT * FROM EMP e WHERE EXISTS (SELECT NULL FROM EMP WHERE mgr = 7839 ); --"exists" return true, so all the 14 rows retrieved.
@@ -40,8 +40,6 @@ SELECT * FROM emp e WHERE EXISTS (SELECT 0 FROM emp WHERE mgr != e.empno); --ret
 SELECT * FROM emp e WHERE EXISTS (SELECT 0 FROM emp WHERE mgr = e.empno); --Find out the employees who belongs to management; a related subquery
 SELECT * FROM emp WHERE EMPNO IN (SELECT MGR FROM EMP); --same result as the above, but obviously this is much easier. so use this one on priority. 
 ```
-
-
 
 
 
