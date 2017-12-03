@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Rock Lau's IT home
 
-### More Information
+### What it is about
 
-A place to include any other types of information that you'd like to include about yourself.
+Make a difference, make the world a better place. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Website: www.itrocks.com
+
+[rock154@foxmail.com](mailto:rock154@foxmail.com)
